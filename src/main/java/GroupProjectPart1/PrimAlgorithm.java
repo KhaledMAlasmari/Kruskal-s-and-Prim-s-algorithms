@@ -22,7 +22,6 @@ public class PrimAlgorithm {
     }
 
     private static ArrayList<Edge> findMST(Graph graph, int source, MinPriorityQueue queue) {
-        int cost = 0;
         boolean[] visited = new boolean[graph.getnVerts()];
         ArrayList<Edge> includedEdges = new ArrayList<>();
         MinPriorityQueue priorityQueue = queue;
@@ -38,7 +37,6 @@ public class PrimAlgorithm {
             }
             visited[edge.end] = true;
             includedEdges.add(edge);
-            cost += edge.cost;
             for (Edge neighbor : verticesList[edge.end].neighbors) {
                 priorityQueue.insert(neighbor);
             }
