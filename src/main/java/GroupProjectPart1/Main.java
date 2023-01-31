@@ -1,6 +1,10 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
+    Khaled mohammed alasmari - 2035189
+    Omar abdulbagi - 2037070
+    Salman alhothly - 2044556
+
+*/
 package GroupProjectPart1;
 
 import java.io.File;
@@ -26,7 +30,7 @@ public class Main {
         addVerticesToGraph(numberOfVertices);
         addEdgesToGraph(numberOfEdges);
         printPrimOutput(graph, 0, QueueType.ARRAY);
-        printPrimOutput(graph, 0, QueueType.ARRAY);
+        printPrimOutput(graph, 0, QueueType.HEAP);
         printKruskalOutput(graph);
     }
 

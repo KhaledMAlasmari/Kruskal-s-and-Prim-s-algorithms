@@ -1,3 +1,10 @@
+/*
+
+    Khaled mohammed alasmari - 2035189
+    Omar abdulbagi - 2037070
+    Salman alhothly - 2044556
+
+*/
 package GroupProjectPart1;
 
 import java.util.ArrayList;

@@ -1,7 +1,10 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+    Khaled mohammed alasmari - 2035189
+    Omar abdulbagi - 2037070
+    Salman alhothly - 2044556
+
+*/
 package GroupProjectPart1;
 
 /**

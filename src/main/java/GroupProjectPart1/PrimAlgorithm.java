@@ -1,7 +1,10 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+    Khaled mohammed alasmari - 2035189
+    Omar abdulbagi - 2037070
+    Salman alhothly - 2044556
+
+*/
 package GroupProjectPart1;
 
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ public class PrimAlgorithm {
 
     public static ArrayList<Edge> findMST(Graph graph, int source, QueueType queueType) {
         if (queueType == QueueType.ARRAY) {
-            return  findMST(graph, source, new MinPriorityQueueUsingArray(graph.getNumberOfEdges()));
+            return findMST(graph, source, new MinPriorityQueueUsingArray(graph.getNumberOfEdges()));
 
         } else {
             return findMST(graph, source, new MinPriorityQueueUsingHeap(graph.getNumberOfEdges()));
@@ -23,13 +26,13 @@ public class PrimAlgorithm {
 
     private static ArrayList<Edge> findMST(Graph graph, int source, MinPriorityQueue queue) {
         boolean[] visited = new boolean[graph.getnVerts()];
+        visited[source] = true;
         ArrayList<Edge> includedEdges = new ArrayList<>();
         MinPriorityQueue priorityQueue = queue;
         Vertex[] verticesList = graph.getVertexList();
         for (Edge edge : verticesList[source].neighbors) {
             priorityQueue.insert(edge);
         }
-        visited[source] = true;
         while (!priorityQueue.isEmpty()) {
             Edge edge = priorityQueue.extractMin();
             if (visited[edge.end]) {
